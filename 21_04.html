@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="stylesheet" href="312.css">
+    <meta charset="UTF-8">
+    <title>Pagina mea, doar a mea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #ddd;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        nav {
+            width: 100px;
+            border-right: 1px solid #000;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #000;
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a:hover {
+            background: #f0f0f0;
+        }
+
+        main {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .images {
+            display: flex;
+            gap: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            border-top: 1px solid #000;
+            padding: 10px;
+        }
+
+        /* Text care se mișcă */
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Pagina mea
+</header>
+
+<div class="marquee">
+    <span>Felicitari!</span>
+</div>
+<table> 
+    <tr>
+        <td><a href="https://view.officeapps.live.com/op/view.aspx?src=https://siteul-tau.ro/Raspunsuri.docx" target="_blank">1</a></td>
+        <td rowspan="3" colspan="2"><img src="bwaba.png" width= 200px height=200px></td>
+        <td rowspan="3" colspan="2"><img src="3.png" width= 200px height=200px></td>
+    </tr>
+    <tr>
+        <td><a href="Raspunsuri.docx">2</a></td>
+    </tr>
+    <tr>
+        <td><a href="Raspunsuri.docx">3</a></td>
+    </tr>
+    <tr>
+        <td><a href="Raspunsuri.docx">4</a></   td>
+        <td rowspan="2" colspan="4"><img src="123.jpg" width= 500px height=150px></td>
+    </tr>
+    <tr>
+        <td><a href="calcule.xlsx">5</a></td>
+    </tr>
+    <tr>
+        <td><a href="PowerPoint.pptx">6</a></td>
+        <td colspan="4">
+            <p> Bibliografie </p>
+            <a href="https://www.w3schools.com/html/">HTML Tutorial</a>
+            <a> CSS</a>
+            <a> Java</a>
+            </td>
+    </tr>
+</table>
+
+</body>
+</html>
